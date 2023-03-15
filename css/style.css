@@ -215,10 +215,18 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social p {
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer p {
@@ -287,7 +295,6 @@ input[type=button] {
 
 /* Features */
 
-/** features icons: 60px ***/
 
 .features {
   display: flex;
@@ -318,7 +325,8 @@ input[type=button] {
   margin: 0;
 }
 
-.features i {
+.features i { /** features icons: 60px ***/
+
 	font-size: 3.75em;
     margin-bottom: 40px;
 }
