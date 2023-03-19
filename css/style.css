@@ -100,7 +100,8 @@ body {
 ul,
 ol {
   list-style: none;
-  
+  margin: 0;
+padding: 0;
 }
 
 a {
@@ -113,6 +114,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -120,11 +122,12 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: 500;
 }
 
 p {
-  font-size: 0.875em;
-  line-height: 1.125em;
+  font-size: .875em;
+  line-height: 1.285;
 }
 
 img {
@@ -199,8 +202,14 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li  {
+  font-size: 1.125em;
+}
+
 footer {
   flex-direction: column;
+  text-align: center;
+
 }
 
 footer .content-wrapper {
@@ -340,14 +349,6 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.reviews figure {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .reviews h3 {
   width: 55%;
   padding: 20px 0;
@@ -355,7 +356,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
-  line-height: 1.875em;
+  line-height: 1em;
 }
 
 /* ==========================================================================
@@ -367,7 +368,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+background-color: #527158;
 }
 
 .contact-section {
@@ -375,7 +376,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+background-color: #2a423a;
 }
 
 .contact-content p {
@@ -407,7 +408,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -420,7 +421,7 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
-  line-height: 1.875em;
+  line-height: 1;
 }
 
 .faq-content {
@@ -571,7 +572,7 @@ input[type=button] {
 
   h3 {
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1.25;
   }
 
   /* ==========================================================================
@@ -579,6 +580,11 @@ input[type=button] {
    ========================================================================== */
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 700px;
+
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -618,12 +624,17 @@ input[type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
   .reviews article {
     display: flex;
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -635,7 +646,11 @@ input[type=button] {
   .reviews h3 {
     width: 75%;
     margin: 0;
+    padding: 0;
 }
+
+
+
 
   /* Footer */
   footer .content-wrapper {
@@ -643,26 +658,33 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
 
-  footer .copyright {
-    width: 100%;
-  }
-
-  footer .contact h4 {
+  footer h4 {
     font-size: 1.5em;
+    margin-bottom: 40px;
   }
 
   footer p {
     line-height: 1.125em;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .copyright {
+    width: 100%;
   }
 
   /* ==========================================================================
@@ -694,9 +716,6 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-  .map figure {
-    padding-bottom: 55%; 
-  }
 
   /* ==========================================================================
    FAQ Page
@@ -715,9 +734,9 @@ input[type=button] {
   }
 
   .faq h4,
-  p {
+  .faq p {
     font-size: 0.875em;
-    line-height: 0.984375em;
+    line-height: 1.125;
   }
 
 }
@@ -752,7 +771,7 @@ input[type=button] {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* Aside */
@@ -818,7 +837,7 @@ input[type=button] {
   }
 
   .faq h4,
-  p {
+  .faq p {
     font-size: 1.125em;
     line-height: 1.125em;
   }
